@@ -50,8 +50,8 @@
     <!-- we can use include('') / include '' => this includes file and if there is error it still load the page
                     require('') / require '' => this includes file and if there is error it prevent loading the page-->
     
-    <h2>Lecture 16 (Header and Footer of website)</h2>
-    <a href="/php_tutorial/Teknoclass.php">Click here to see content</a>
+    <h2>Lecture 16 (Website)</h2>
+    <a href="/php_tutorial/website/Teknoclass.php">Click here to see content</a>
     
 </body>
 </html>
