@@ -1,3 +1,20 @@
+<?php 
+
+	session_start();
+		
+	if($_SERVER['QUERY_STRING'] == 'noname'){		// $_SERVER['QUERY_STRING'] -> the string after ? in url
+		//unset($_SESSION['name']);
+		session_unset();
+	}
+
+	// null coalesce
+	$name = $_SESSION['name'] ?? 'Mohammad';
+
+	// get cookie
+	$gender = $_COOKIE['gender'] ?? 'Unknown';
+
+?>
+
 <head>
 	<title>TeknoClass</title>
 	<!-- Compiled and minified CSS -->
@@ -28,6 +45,8 @@
     <div class="container">
       <a href="teknoclass.php" class="brand-logo brand-text">TeknoClass</a>
       <ul id="nav-mobile" class="right hide-on-small-and-down">
+        <li class="grey-text">Hello <?php echo htmlspecialchars($name); ?> </li>
+		<li class="grey-text"> (<?php echo htmlspecialchars($gender); ?>)</li>
         <li><a href="add.php" class="btn brand z-depth-0">Add an employee</a></li>
       </ul>
     </div>

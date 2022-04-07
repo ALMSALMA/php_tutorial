@@ -1,8 +1,6 @@
 <?php 
-    // echo 'This is php tutorial';  
 
     $name = "Mohammad";
-    $age = "23";
     define('SURNAME', 'AL MSALMA');     // define constant variable
     //  define('SURNAME', 'TEST');      // Will give error! -> cannot redefine a constant
 
